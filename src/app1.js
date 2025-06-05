@@ -4,17 +4,17 @@
   let doc = [".com", ".es", ".co", "br", "ar"];
   
  let generadorDominios = () => {    
-    for (let iPronoun = 0; iPronoun < pronoun.length; iPronoun ++){
-        let newPronoun = [pronoun[iPronoun]];
+    for (let pronounIndex = 0; pronounIndex < pronoun.length; pronounIndex ++){
+        let newPronoun = [pronoun[pronounIndex]];
 
-        for (let iAdj = 0; iAdj < adj.length; iAdj ++){
-            let newAjd = [adj[iAdj]];
+        for (let adjIndex = 0; adjIndex < adj.length; adjIndex ++){
+            let newAjd = [adj[adjIndex]];
 
-            for (let iNoun = 0; iNoun < noun.length; iNoun ++){
-                let newNoun = [noun[iNoun]];
+            for (let nounIndex = 0; nounIndex < noun.length; nounIndex ++){
+                let newNoun = [noun[nounIndex]];
 
-                for (let iDoc = 0; iDoc < doc.length; iDoc ++){
-                    let newDoc =[doc[iDoc]];
+                for (let docIndex = 0; docIndex < doc.length; docIndex ++){
+                    let newDoc =[doc[docIndex]];
 
                     console.log(newPronoun + newAjd +newNoun + newDoc)
                 };
