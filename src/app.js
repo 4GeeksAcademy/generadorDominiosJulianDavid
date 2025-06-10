@@ -9,18 +9,14 @@ window.onload = function () {
   let generadorDominios = () => {
     let dominios = [];
     for (let pronounIndex = 0; pronounIndex < pronoun.length; pronounIndex++) {
-      let newPronoun = [pronoun[pronounIndex]];
 
       for (let adjIndex = 0; adjIndex < adj.length; adjIndex++) {
-        let newAjd = [adj[adjIndex]];
 
         for (let nounIndex = 0; nounIndex < noun.length; nounIndex++) {
-          let newNoun = [noun[nounIndex]];
 
           for (let docIndex = 0; docIndex < doc.length; docIndex++) {
-            let newDoc = [doc[docIndex]];
 
-            let dominio = (newPronoun + newAjd + newNoun + newDoc);
+            let dominio = [pronoun[pronounIndex]] + [adj[adjIndex]] + [noun[nounIndex]] + [doc[docIndex]];
             dominios.push(dominio)
             console.log(dominios)
            
